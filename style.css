@@ -1,0 +1,43 @@
+.main{
+    width: 1350px;
+    height: 640px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+}
+.main1{
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    display: flex;
+
+}
+
+#income{
+    text-align: center;
+    width: 150px;
+    border-right: 1px solid rgba(0, 0, 0, .4);
+    
+}
+
+#expense{
+    text-align: center;
+    width: 150px;
+    
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: hotpink;
+}
+
+#article{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ background-color: white;
+ height: 30px;
+ width: 300px;   
+}
