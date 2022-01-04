@@ -8,6 +8,7 @@ let btn = document.getElementById('btn');
 let text = document.getElementById('text');
 let rupees = document.getElementById('rupees');
 let article = document.getElementById('article');
+let article2 = document.getElementById('article2');
 
 
 
@@ -22,13 +23,27 @@ let article = document.getElementById('article');
      }
  
        let element = document.createElement('article')
-       element.innerHTML = ` <div id="article">
-    
+      // element.setAttribute('class','pizza')
+       element.innerHTML = ` 
+       <div id="article2">
+      
        <div id="text">${input11}</div>
        <div id="rupees">${input12}</div> 
-       </div> `
+       
+       </div>
+        `
        console.log(element);
 
-       article.appendChild(element);
+      // element.appendChild(article);
+      // article.appendChild(rupees)
 
+
+    
+    //    if (input12 > 0 ) {
+    //     green.innerText = input12;
+    // } else{
+    //     red.innerText = input12;
+    // }
+
+ 
    })
