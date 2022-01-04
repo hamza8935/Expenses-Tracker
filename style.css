@@ -1,6 +1,6 @@
 .main{
-    width: 1350px;
-    height: 640px;
+    width: 1330px;
+    /* height: 640px; */
     background-color: whitesmoke;
     display: flex;
     justify-content: center;
@@ -40,4 +40,31 @@
  background-color: white;
  height: 30px;
  width: 300px;   
+}
+
+#input{
+    width: 300px;
+    height: 30px;
+}
+.bold{
+    font-size: 20px;
+    
+}
+#input{
+    margin: 10px 0px 10px 0px;
+}
+.para{
+    font-size: 18px;
+}
+#input1{
+    width: 300px;
+    height: 30px;
+}
+#btn{
+    width: 320px;
+    height: 40px;
+    background-color: blueviolet;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
 }
