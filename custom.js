@@ -11,12 +11,12 @@ let item = document.getElementById('main-item');
 
    btn.addEventListener('click',function () {
      let  input11 = input.value;
-     let input12 = input1.value;
      
+     let input12 = input1.value
      if (input12 > 0 ) {
-         green.innerText = input12;
+         green.innerText =`$ ${input12}`;
      } else{
-         red.innerText = input12;
+         red.innerText =`$ ${input12}`;
      }
  
        let element = document.createElement('div')
