@@ -44,6 +44,9 @@ let article2 = document.getElementById('article2');
     // } else{
     //     red.innerText = input12;
     // }
+    // let arr = [];
+    // arr.push(input12)
+    // console.log(arr);
 
- 
+    
    })
