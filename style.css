@@ -6,7 +6,7 @@
     justify-content: center;
 }
 .main1{
-    width: 300px;
+    width: 400px;
     height: 100px;
     background-color: white;
     display: flex;
@@ -15,14 +15,14 @@
 
 #income{
     text-align: center;
-    width: 150px;
+    width: 200px;
     border-right: 1px solid rgba(0, 0, 0, .4);
     
 }
 
 #expense{
     text-align: center;
-    width: 150px;
+    width: 200px;
     
 }
 
@@ -40,7 +40,7 @@
  background-color: white;
  margin-bottom: 5px;
  height: 30px;
- width: 300px;   
+ width: 400px;   
 }
 /* .pizza{
     display: flex;
@@ -52,7 +52,7 @@
 } */
 
 #input{
-    width: 300px;
+    width: 400px;
     height: 30px;
 }
 .bold{
@@ -66,11 +66,11 @@
     font-size: 18px;
 }
 #input1{
-    width: 300px;
+    width: 400px;
     height: 30px;
 }
 #btn{
-    width: 320px;
+    width: 420px;
     height: 40px;
     background-color: blueviolet;
     color: white;
