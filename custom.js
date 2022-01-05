@@ -9,7 +9,8 @@ let rupees = document.getElementById('rupees');
 let item = document.getElementById('main-item'); 
 
 
-   btn.addEventListener('click',function () {
+   btn.addEventListener('click',function (event) {
+     event.preventDefault()
      let  input11 = input.value;
      
      let input12 = input1.value
@@ -31,6 +32,11 @@ let item = document.getElementById('main-item');
        `
        console.log(element);
        item.appendChild(element);
+
+let arr = [];
+arr.unshift(input12);
+console.log(arr);
+
 
        input.value = '';
        input1.value = '';
