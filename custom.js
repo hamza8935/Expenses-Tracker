@@ -3,13 +3,10 @@ let input1 = document.getElementById('input1');
 let result = document.getElementById('result');
 let green = document.querySelector('.green');
 let red = document.querySelector('.red');
-let article1 = document.querySelector('.article');
 let btn = document.getElementById('btn');
 let text = document.getElementById('text');
 let rupees = document.getElementById('rupees');
-let article = document.getElementById('article');
-let article2 = document.getElementById('article2');
-
+let item = document.getElementById('main-item'); 
 
 
    btn.addEventListener('click',function () {
@@ -22,21 +19,21 @@ let article2 = document.getElementById('article2');
          red.innerText = input12;
      }
  
-       let element = document.createElement('article')
-      // element.setAttribute('class','pizza')
+       let element = document.createElement('div')
+       element.setAttribute('id','article')
        element.innerHTML = ` 
-       <div id="article2">
+       
       
        <div id="text">${input11}</div>
-       <div id="rupees">${input12}</div> 
+       <div id="rupees">$${input12}</div>    
+
        
-       </div>
-        `
+       `
        console.log(element);
+       item.appendChild(element);
 
-      // element.appendChild(article);
-      // article.appendChild(rupees)
-
+       input.value = '';
+       input1.value = '';
 
     
     //    if (input12 > 0 ) {
