@@ -33,11 +33,12 @@
     color: hotpink;
 }
 
-#article2{
+#article{
  display: flex;
  align-items: center;
  justify-content: space-between;
  background-color: white;
+ margin-bottom: 5px;
  height: 30px;
  width: 300px;   
 }
