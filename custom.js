@@ -12,16 +12,17 @@ let item = document.getElementById('main-item');
 
    btn.addEventListener('click',function (event) {
      event.preventDefault()
-    
+   let arr1 ;
+   let input12 ;
      
-     let input12 = parseInt(input1.value);
-     if (input12 > 0 ) {
-         //result.innerText = input12;
-         green.innerText =`$ ${input12}`;
-     } else{
-        // result.innerText = input12;
-         red.innerText =`$ ${input12}`;
-     }
+      input12 = parseInt(input1.value);
+    //  if (input12 > 0 ) {
+    //      //result.innerText = input12;
+    //    green.innerText =`$ ${arr1}`;
+    //  } else{
+    //     // result.innerText = input12;
+    //      red.innerText =`$ ${arr1}`;
+    //  }
      let  input11 = input.value;
      
 
@@ -31,10 +32,10 @@ let item = document.getElementById('main-item');
   //      return Number
   //    })
   //    console.log(a1);
-  let arr1 = arr.reduce(function (prev , curr){
+   arr1 = arr.reduce(function (prev , curr){
        return prev + curr ;
      })
-     result.innerText =parseInt(arr1) ;
+     result.innerText =arr1 ;
        let element = document.createElement('div')
        element.setAttribute('id','article')
        element.innerHTML = ` 
@@ -48,6 +49,13 @@ let item = document.getElementById('main-item');
        
        console.log(element);
        item.appendChild(element);
+       if (input12 > 0 ) {
+        //result.innerText = input12;
+      green.innerText =`$ ${arr1}`;
+    } else{
+       // result.innerText = input12;
+        red.innerText =`$ ${arr1}`;
+    }
       //  result.innerText = input12;
 
 // let arr = [];
