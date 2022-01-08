@@ -30,17 +30,20 @@ let item = document.getElementById('main-item');
 
        
        `
+       
        console.log(element);
        item.appendChild(element);
+       result.innerText = input12;
 
-let arr = [];
-arr.unshift(input12);
-console.log(arr);
-
+// let arr = [];
+// arr.unshift(input12);
+// console.log(arr);
+         
 
        input.value = '';
        input1.value = '';
 
+                  
     
     //    if (input12 > 0 ) {
     //     green.innerText = input12;
