@@ -14,7 +14,7 @@ let item = document.getElementById('main-item');
      event.preventDefault()
     
      
-     let input12 = input1.value
+     let input12 = parseInt(input1.value);
      if (input12 > 0 ) {
          //result.innerText = input12;
          green.innerText =`$ ${input12}`;
@@ -27,10 +27,14 @@ let item = document.getElementById('main-item');
 
       arr.push(input12)
      console.log(arr);  
+  //  let a1 =   arr.map(function(Number){
+  //      return Number
+  //    })
+  //    console.log(a1);
   let arr1 = arr.reduce(function (prev , curr){
        return prev + curr ;
      })
-     result.innerText = arr1 ;
+     result.innerText =parseInt(arr1) ;
        let element = document.createElement('div')
        element.setAttribute('id','article')
        element.innerHTML = ` 
