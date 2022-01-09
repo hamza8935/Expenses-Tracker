@@ -53,7 +53,7 @@ let item = document.getElementById('main-item');
    arr1 = arr.reduce(function (prev , curr){
        return prev + curr ;
      })
-     result.innerText =arr1 ;
+     result.innerText =`$${arr1}.00` ;
   //-------------------------------------- INCOME VALUE --------------------------------------
      let arr2 = arr.filter(function (num){
             return num > 0
