@@ -32,6 +32,22 @@ let item = document.getElementById('main-item');
   //      return Number
   //    })
   //    console.log(a1);
+   //---------------------------------------------- CREATE ELEMENT ---------------------------       
+   let element = document.createElement('div')
+   element.setAttribute('id','article')
+   element.innerHTML = ` 
+   
+  
+   <div id="text">${input11}</div>
+   <div id="rupees">$${input12}</div>    
+
+   
+   `
+   
+   console.log(element);
+   item.appendChild(element);
+//------------------------------------------------------------------------------------------------------       
+
 
     // ----------------------------------- RESULT VALUE ------------------------------------
    arr1 = arr.reduce(function (prev , curr){
@@ -58,22 +74,11 @@ let item = document.getElementById('main-item');
       
      red.innerText = arr5 ;
      console.log('negative array' + arr4);
- //---------------------------------------------- CREATE ELEMENT ---------------------------       
-       let element = document.createElement('div')
-       element.setAttribute('id','article')
-       element.innerHTML = ` 
-       
-      
-       <div id="text">${input11}</div>
-       <div id="rupees">$${input12}</div>    
 
-       
-       `
-       
-       console.log(element);
-       item.appendChild(element);
-//------------------------------------------------------------------------------------------------------       
-    //    if (input12 > 0 ) {
+
+
+
+     //    if (input12 > 0 ) {
     //     //result.innerText = input12;
     //   green.innerText =`$ ${arr1}`;
     // } else{
