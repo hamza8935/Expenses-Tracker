@@ -32,10 +32,33 @@ let item = document.getElementById('main-item');
   //      return Number
   //    })
   //    console.log(a1);
+
+    // ----------------------------------- RESULT VALUE ------------------------------------
    arr1 = arr.reduce(function (prev , curr){
        return prev + curr ;
      })
      result.innerText =arr1 ;
+  //-------------------------------------- INCOME VALUE --------------------------------------
+     let arr2 = arr.filter(function (num){
+            return num > 0
+     })
+     console.log("positive " + arr2);
+  let arr3  =   arr2.reduce(function( prev , curr ){
+              return prev + curr ;
+     })
+        green.innerText = arr3;      
+
+//---------------------------------------------EXPENSE VALUE --------------------------------
+     let arr4 = arr.filter(function(num){
+         return num < 0 ;
+     })   
+     let arr5 = arr4.reduce(function( prev ,curr ){
+         return prev + curr ;
+     } )
+      
+     red.innerText = arr5 ;
+     console.log('negative array' + arr4);
+ //---------------------------------------------- CREATE ELEMENT ---------------------------       
        let element = document.createElement('div')
        element.setAttribute('id','article')
        element.innerHTML = ` 
@@ -49,13 +72,14 @@ let item = document.getElementById('main-item');
        
        console.log(element);
        item.appendChild(element);
-       if (input12 > 0 ) {
-        //result.innerText = input12;
-      green.innerText =`$ ${arr1}`;
-    } else{
-       // result.innerText = input12;
-        red.innerText =`$ ${arr1}`;
-    }
+//------------------------------------------------------------------------------------------------------       
+    //    if (input12 > 0 ) {
+    //     //result.innerText = input12;
+    //   green.innerText =`$ ${arr1}`;
+    // } else{
+    //    // result.innerText = input12;
+    //     red.innerText =`$ ${arr1}`;
+    // }
       //  result.innerText = input12;
 
 // let arr = [];
